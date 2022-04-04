@@ -59,9 +59,9 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-role :app, %w{deploy_user@3.35.19.213}
-role :web, %w{deploy_user@3.35.19.213}
-role :db,  %w{deploy_user@3.35.19.213}
+role :app, %w{deploy_user@ec2-3-35-19-213.ap-northeast-2.compute.amazonaws.com}
+role :web, %w{deploy_user@ec2-3-35-19-213.ap-northeast-2.compute.amazonaws.com}
+role :db,  %w{deploy_user@ec2-3-35-19-213.ap-northeast-2.compute.amazonaws.com}
 set :ssh_options, {
    keys: %w(C:\Users\Sai Sravya\Downloads\example-devops.pem),
    forward_agent: false,
